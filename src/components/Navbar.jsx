@@ -24,17 +24,14 @@ function Navbar() {
             </Typography>
           </Link>
         </Box>
-        <Button component={Link} to="/card" sx={buttonStyle}>
+        <Button component={Link} to="/carta" sx={buttonStyle}>
           Cartas
         </Button>
-        <Button component={Link} to="/clanes" sx={buttonStyle}>
-          Clanes
+        <Button component={Link} to="/jugadores" sx={buttonStyle}>
+          Jugadores
         </Button>
-        <Button component={Link} to="/retos" sx={buttonStyle}>
-          Retos
-        </Button>
-        <Button component={Link} to="/cardguardada" sx={buttonStyle}>
-          Guardado
+        <Button component={Link} to="/guardados" sx={buttonStyle}>
+          Guardados
         </Button>
       </Toolbar>
     </AppBar>

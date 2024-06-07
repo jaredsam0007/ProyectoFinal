@@ -2,19 +2,19 @@ import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import { Cursorify } from 'cursorify';
 // Importa aquí otros componentes necesarios como Cartas, Clanes, etc.
 import WelcomeMessage from "./components/Welcomemessage"
+import Cartas from './components/Cartas';
+import Players from './components/Players';
+import Guardados from './components/Guardados';
 function App() {
   return (
     <Router>
       <Navbar />
       <Routes>
-        {/*<Route path="/card" element={<Cartas />} />
-        <Route path="/clanes" element={<Clanes />} />
-        <Route path="/retos" element={<Challenges />} />
-        <Route path="/cardguardada" element={<Guardados />} />
-  */}
+        <Route path="/carta" element={<Cartas />} />
+        <Route path="/jugadores" element={<Players />} />
+        <Route path="/guardados" element={<Guardados />} />
         <Route path="/" element={<WelcomeMessage />} />
       </Routes>
       <Footer />
